@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main-bg-color: #f0f4fc;
+    --accent-bg-color: #9c9290;
+    --container-bg-color: #c9cfcf;
+    --headings-color: #323120;
+    --text-color: #7a8187;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+
+}
+
+.header {
+    background-color: var(--accent-bg-color);
+    position: relative;
+}
+
+.header-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 40px 0 220px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    float: right;
+    padding: 0;
+}
+
+.nav-item {
+    height: 46px;
+    background-color: var(--container-bg-color);
+    padding: 10px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px var(--headings-color));
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform ease .5s;
+}
+
+.main {
+    background-color: var(--container-bg-color);
+}
+.info {
+    width: 60%;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 0 10px 0px var(--headings-color);
+}
+.info-container {
+    background-color: var(--main-bg-color);
+    display: flex;
+    color: var(--text-color);
+    margin: 0 auto;
+    gap: 6%;
+    position: relative;
+}
+.photo-container {
+   height: 300px;
+    flex-basis: 30%;
+    z-index: 3;
+}
+.profile-photo {
+    height: 100%;
+    line-height: 0;
+}
+.information {
+    line-height: 150%;
+    flex-basis: 64%;
+    padding: 30px 30px 0 0;
+}
+.name {
+    color: var(--headings-color);
+    margin: 0 0 10px;
+}
+.line {
+    background-color: var(--accent-bg-color);
+    width: 100%;
+    margin: 10px 0;
+    height: 1px;
+}
+.info-text span {
+    font-weight: bold;
+    color: var(--headings-color);
+}
+.social-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    background-color: var(--accent-bg-color);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 5px 4% 5px 34%;
+}
+.social-item {
+    height: 36px;
+    background-color: var(--container-bg-color);
+    padding: 5px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px var(--headings-color));
+    margin: 15px;
+}
+.social-item:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform ease .5s;
+}
+.info-link {
+    text-decoration: none;
+    color: var(--accent-bg-color);
+}
