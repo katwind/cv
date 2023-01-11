@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --main-bg-color: #f0f4fc;
-    --accent-bg-color: #9c9290;
-    --container-bg-color: #c9cfcf;
-    --headings-color: #323120;
-    --text-color: #5e6166;
+    /*--main-bg-color: #f0f4fc;*/
+    /*--accent-bg-color: #9c9290;*/
+    /*--container-bg-color: #c9cfcf;*/
+    /*--headings-color: #323120;*/
+    /*--text-color: #5e6166;*/
+
+    --main-bg-color: #d9b08c;
+    --accent-bg-color:#2c3531;
+    --container-bg-color:  #116466;
+    --headings-color: #ffcb92;
+    --text-color: #d1e8e2;
 }
 
 * {
