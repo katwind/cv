@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
-    /*--main-bg-color: #f0f4fc;*/
-    /*--accent-bg-color: #9c9290;*/
-    /*--container-bg-color: #c9cfcf;*/
-    /*--headings-color: #323120;*/
-    /*--text-color: #5e6166;*/
-
     --main-bg-color: rgb(220, 194, 157);
-    --accent-bg-color:#2c3531;
-    --container-bg-color:  #116466;
+    --accent-bg-color: #2c3531;
+    --container-bg-color: #116466;
     --headings-color: #ffead9;
     --text-color: #d1e8e2;
 }
@@ -22,7 +16,7 @@
 
 body {
     font-family: Montserrat, sans-serif;
-    background: linear-gradient(180deg, rgba(44,53,49,1) 18%, rgba(29,131,126,1) 45%, rgba(17,100,102,1) 100%);
+    background: linear-gradient(180deg, rgba(44, 53, 49, 1) 13%, rgba(29, 131, 126, 1) 40%, rgba(17, 100, 102, 1) 68%, rgba(44, 53, 49, 1) 100%);
 }
 
 .header {
@@ -33,7 +27,7 @@ body {
 .header-container {
     max-width: 1220px;
     margin: 0 auto;
-    padding: 50px 0 ;
+    padding: 50px 0;
 }
 
 .nav-list {
@@ -58,14 +52,11 @@ body {
     text-decoration: none;
     color: var(--main-bg-color);
 }
+
 .nav-link:hover {
     color: var(--text-color);
     filter: drop-shadow(0 0 10px var(--text-color));
     transition: all .5s ease;
-}
-
-.main {
-
 }
 
 .info {
@@ -73,7 +64,6 @@ body {
     box-shadow: 0 0 10px 0 var(--headings-color);
     border-radius: 0 0 20px 20px;
     margin: 50px auto;
-
 }
 
 .info-container {
@@ -142,38 +132,104 @@ body {
     border-radius: 50%;
     filter: drop-shadow(0 0 10px var(--headings-color));
     margin: 15px;
+    cursor: pointer;
 }
 
 .social-item:hover {
-    cursor: pointer;
     transform: scale(1.2);
     transition: transform ease .5s;
 }
 
 .info-link {
     text-decoration: none;
-    color: var(--accent-bg-color);
+    color: var(--text-color);
 }
 
-.about-heading {
-    margin-top: 80px;
+.info-link:hover {
+    color: var(--container-bg-color);
+}
+
+.about-heading,
+.education-heading,
+.experience-heading {
+    color: var(--headings-color);
+    margin-top: 70px;
     text-align: center;
+    font-size: 30px;
 }
 
 .about-container,
-.education-container {
+.education-container,
+.experience-container {
+    box-shadow: 0 0 10px var(--headings-color);
     max-width: 60%;
     margin: 50px auto 0;
     line-height: 150%;
-    background-color: var(--main-bg-color);
-    color: var(--text-color);
-    filter: drop-shadow(0 0 10px var(--headings-color));
+    background: rgba(210, 183, 145, 0.75);
+    color: var(--accent-bg-color);
     border-radius: 0 0 20px 20px;
 }
 
 .about-info {
+    padding: 0 0 0 5%;
+    display: flex;
+    gap: 7%;
+}
+
+.personal-info {
+    flex-basis: 73%;
+    padding: 5% 0 5%;
+}
+
+.skills {
+    flex-basis: 30%;
+    background-color: var(--accent-bg-color);
+    border-bottom: 1px solid rgba(220, 194, 157, 0.7);
     padding: 5%;
-    flex-basis: 45%;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-item {
+    color: var(--text-color);
+}
+
+.skill-progress {
+    height: 6px;
+    width: 100%;
+    background-color: rgba(220, 194, 157, 0.4);
+    border-radius: 3px;
+    margin: 5px 0;
+    text-align: right;
+}
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 70%;
+}
+
+.js {
+    width: 20%
+}
+.react {
+    width: 10%;
+}
+.sass {
+    width: 50%;
+}
+.english {
+    width: 65%;
+}
+.html, .css, .js, .sass, .react, .english {
+    background-color: var(--main-bg-color);
+    height: 6px;
+    border-radius: 3px;
 }
 
 .about-lang {
@@ -194,23 +250,35 @@ body {
     line-height: 150%;
     margin: 0;
 }
-.education-heading {
-    margin: 70px auto 0;
-    text-align: center;
-}
+
 .education-container {
     border-radius: 0 0 20px 20px;
 }
-.educational-item {
-    padding: 5% 5% 0 5% ;
+
+.educational-item,
+.exp-item {
+    padding: 30px 5% 10px 5%;
 }
-.educational-item span {
+
+.educational-item span,
+.exp-item span{
     font-weight: 600;
 }
-.courses {
+
+.education-container .line {
+    margin: 20px 5% 0;
+    width: 90%;
+    background-color: rgba(209, 232, 226, 0.5);
+}
+
+.courses,
+.exp-item:last-child {
     background: var(--accent-bg-color);
     color: var(--headings-color);
     padding: 20px 5%;
     border-radius: 0 0 20px 20px;
     margin-top: 5%;
+}
+.exp-item:last-child {
+    margin-top: 2%;
 }
