@@ -6,7 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>CV</title>
+    <link rel="shortcut icon" href="./images/face.ico" type="image/x-icon">
+    <title>CV Katerina Korobova</title>
 </head>
 <body>
 <header class="header">
@@ -189,7 +190,46 @@
             </div>
         </div>
     </section>
+    <section class="additional">
+        <div class="gallery">
+            <h2 class="gallery-heading">Gallery</h2>
+            <div class="gallery-container">
+                <div class="slide-wrapper slide" id="ph1">
+                    <div class="slide-count">1 / 5</div>
+                </div>
+                <div class="slide-wrapper slide" id="ph2">
+                    <div class="slide-count">2 / 5</div>
+
+                </div>
+                <div class="slide-wrapper slide" id="ph3">
+                    <div class="slide-count">3 / 5</div>
+                </div>
+                <div class="slide-wrapper slide" id="ph4">
+                    <div class="slide-count">4 / 5</div>
+                </div>
+                <div class="slide-wrapper slide" id="ph5">
+                    <div class="slide-count">5 / 5</div>
+                </div>
+
+                <a onclick="moveSlides(-1)" class="prev-button">
+                    &#10094;
+                </a>
+                <a onclick="moveSlides(1)" class="next-button">
+                    &#10095;
+                </a>
+            </div>
+            <br>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </section>
 </main>
 <footer class="footer"></footer>
+<script src="script.js"></script>
 </body>
 </html>
