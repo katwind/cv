@@ -334,6 +334,11 @@ body {
     transform: translate(0, -50%);
 }
 
+.prev-button .mob,
+.next-button .mob {
+    display: none;
+}
+
 .next-button {
     right: 10px;
     padding: 7px 14px 9px 16px;
@@ -524,6 +529,7 @@ body {
     height: 26px;
     filter: none;
 }
+
 .footer-container .social-link {
     margin: 0;
 }
@@ -643,7 +649,9 @@ body {
     .gallery-image {
         height: 400px;
     }
-
+.slide-count {
+    left: 10%;
+}
     .navigation-panel {
         display: none;
     }
@@ -793,7 +801,7 @@ body {
     }
 
     .skill-list {
-        padding: 0 5%;
+        padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -801,11 +809,19 @@ body {
 
     .skill-item {
         flex-basis: 28%;
+        font-size: 14px;
+    }
+
+    .skill-progress {
+        width: 80px;
     }
 
     .gallery-container {
         width: 400px;
         height: 350px;
+    }
+    .slide-count {
+        left: 5%;
     }
 
     .slide-wrapper {
@@ -837,5 +853,91 @@ body {
 
     .footer-container .social-item {
         margin: 0;
+    }
+}
+
+@media (max-width: 436px) {
+    .about-lang {
+        padding: 8%;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer-container .date {
+        display: none;
+    }
+    .footer-container {
+        padding: 20px 4%;
+    }
+}
+
+@media (max-width: 404px) {
+    .gallery-container {
+        max-width: 250px;
+    }
+
+    .prev-button,
+    .next-button {
+        position: relative;
+        top: 0;
+        margin: 0;
+        padding: 4px 12px 5px 11px;
+        transform: translate(0, 0);
+    }
+
+    .gallery-container .prev-button,
+    .gallery-container .next-button {
+        display: none;
+    }
+
+    .gallery-bar .prev-button .mob,
+    .gallery-bar .next-button .mob {
+        display: block;
+        position: static;
+    }
+.prev-button:hover,
+.next-button:hover {
+    transform: translate(0, 0) scale(1.1);
+}
+    .gallery-bar {
+        margin: 0 0 0 52%;
+        transform: translate(-50%, 0);
+        display: flex;
+        align-items: center;
+    }
+
+    .dots {
+        margin: 0 20px 0 16px;
+    }
+}
+@media (max-width: 383px) {
+    .prev-button,
+    .next-button {
+        padding: 0;
+        border: none;
+    }
+    .gallery-bar {
+        justify-content: space-between;
+    }
+    .main-info {
+        margin-left: 20px;
+    }
+    .info-container .social-item {
+        padding: 4px;
+    }
+    .info-container .social-link svg {
+        transform: scale(0.8);
+    }
+    .about-lang h3 {
+        font-size: 14px;
+line-height: 150%;
+    }
+    .language {
+        font-size: 14px;
+    }
+}
+@media (max-width: 351px) {
+    .skill-item {
+        margin: 0 8px;
     }
 }

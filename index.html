@@ -130,11 +130,10 @@
         <h2 class="about-heading">About</h2>
         <div class="about-container">
             <div class="about-info">
-                <p class="personal-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus lectus,
-                    ultricies gravida neque
-                    nec, dictum congue nibh. Proin interdum feugiat vulputate. Aliquam eu tempus leo. Quisque eros nunc,
-                    laoreet nec fringilla ut, molestie eu turpis. Pellentesque lacinia velit eget sapien feugiat
-                    scelerisque.</p>
+                <p class="personal-info">
+                    Hello everyone. I'm on the way of learning front-end and I love it! I enjoy learning and improving
+                    both my hard and soft skills.
+                </p>
                 <div class="skills">
                     <ul class="skill-list">
                         <li class="skill-item">
@@ -256,13 +255,20 @@
                     &#10095;
                 </a>
             </div>
-            <br>
-            <div class="dots">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
+            <div class="gallery-bar">
+                <a onclick="moveSlides(-1)" class="prev-button mob" title="Previous slide">
+                    &#10094;
+                </a>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+                <a onclick="moveSlides(1)" class="next-button mob" title="Next slide">
+                    &#10095;
+                </a>
             </div>
         </div>
     </section>

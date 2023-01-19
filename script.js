@@ -42,5 +42,5 @@ function scrollFunction() {
     }
 }
 mybutton.onclick = function topFunction() {
-    document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
+    document.documentElement.scrollTop = 0;
 }
