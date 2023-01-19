@@ -23,8 +23,24 @@ function showSlides(num) {
         slides[i].style.display = "none";
     }
     for (i=0; i < dots.length; i++) {
-        dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(' active', '');
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active"
+}
+
+mybutton = document.getElementById("btn-up");
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+mybutton.onclick = function topFunction() {
+    document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
 }
