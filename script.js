@@ -44,3 +44,13 @@ function scrollFunction() {
 mybutton.onclick = function topFunction() {
     document.documentElement.scrollTop = 0;
 }
+
+const btn = document.querySelector(".btn-toggle");
+const theme = document.querySelector("#theme-link");
+btn.addEventListener("click", function() {
+    if (theme.getAttribute("href") == "light-theme.css") {
+        theme.href = "style.css";
+    } else {
+        theme.href = "light-theme.css";
+    }
+});

@@ -5,13 +5,34 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" id="theme-link">
     <link rel="shortcut icon" href="./images/face.ico" type="image/x-icon">
     <title>CV Katerina Korobova</title>
 </head>
 <body>
 <header class="header">
     <div class="header-container">
+        <div class="navbar-burger">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+            </label>
+            <ul class="nav-burger-box">
+                <li><a href="#contacts" class="burger-item">Contacts</a></li>
+                <li><a href="#about" class="burger-item">About</a></li>
+                <li><a href="#education" class="burger-item">Education</a></li>
+                <li><a href="#experience" class="burger-item">Experience</a></li>
+                <li><a href="#gallery-id" class="burger-item">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="switch-theme">
+           <button class="btn-toggle">
+               <svg width="34px" height="34px">
+                   <use xlink:href="./images/icons.svg#color-theme"></use>
+               </svg>
+           </button>
+        </div>
+
         <nav class="navigation-panel">
             <ul class="nav-list">
                 <li class="nav-item">
@@ -35,26 +56,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#additional" class="nav-link">
-                        Additional
+                    <a href="#gallery-id" class="nav-link">
+                        Gallery
                     </a>
                 </li>
 
             </ul>
         </nav>
-        <div class="navbar-burger">
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-button">
-                <span></span>
-            </label>
-            <ul class="nav-burger-box">
-                <li><a href="#contacts" class="burger-item">Contacts</a></li>
-                <li><a href="#about" class="burger-item">About</a></li>
-                <li><a href="#education" class="burger-item">Education</a></li>
-                <li><a href="#experience" class="burger-item">Experience</a></li>
-                <li><a href="#additional" class="burger-item">Additional</a></li>
-            </ul>
-        </div>
+
         <div class="header-name">
             <h4 class="h-name">Katerina Korobova</h4>
             <a href="tel:+375291066492" class="h-tel">+375-29-106-64-92</a>
@@ -221,7 +230,7 @@
             </div>
         </div>
     </section>
-    <section class="additional-section" id="additional">
+    <section class="gallery-section" id="gallery-id">
         <div class="gallery">
             <h2 class="gallery-heading">Gallery</h2>
             <div class="gallery-container">
