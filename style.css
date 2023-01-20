@@ -813,7 +813,7 @@ body {
         border: none;
     }
 
-    .social-item .desk {
+    .social-item .social-link.desk {
         display: none;
     }
 
