@@ -806,14 +806,13 @@ body {
         border-top: 1px solid var(--accent-bg-color);
     }
 
-    .social-link.mob {
+    .social-item .social-link.mob {
         display: block;
         transform: none;
         padding: 0;
         border: none;
     }
-
-    .social-item .social-link.desk {
+    .desk {
         display: none;
     }
 
