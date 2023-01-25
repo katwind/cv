@@ -39,6 +39,7 @@ body {
     border: none;
     filter: drop-shadow(0 0 10px var(--headings-color));
 }
+
 .btn-toggle:hover {
     color: var(--text-color);
 }
@@ -135,9 +136,11 @@ body {
 .info-container .mob {
     display: none;
 }
+
 .social-link.mob {
     display: none;
 }
+
 .info-text span {
     font-weight: bold;
     color: var(--headings-color);
@@ -206,6 +209,10 @@ body {
     padding: 0 0 0 5%;
     display: flex;
     gap: 7%;
+}
+
+.about-facts {
+    list-style: square;
 }
 
 .personal-info {
@@ -323,16 +330,16 @@ body {
 .gallery-container {
     max-width: 800px;
     position: relative;
-    margin: 1% auto;
-    height: 600px;
+    margin: 40px auto 0;
+    height: 660px;
     overflow: hidden;
 }
 
 .slide-wrapper {
     display: none;
     width: 450px;
-    height: 600px;
-    margin: 30px auto;
+    height: 630px;
+    margin: 15px auto;
     text-align: center;
     filter: drop-shadow(0 0 10px var(--headings-color));
 }
@@ -599,7 +606,12 @@ body {
 
     .gallery-container {
         max-width: 600px;
+        max-height: 500px;
+    }
+
+    .slide-wrapper {
         height: 450px;
+        margin-bottom: 0;
     }
 
     .up-button {
@@ -800,15 +812,18 @@ body {
     .social-item {
         margin: 5px;
     }
+
     .social-item .social-link.mob {
         display: block;
         transform: none;
         padding: 0;
         border: none;
     }
+
     .desk {
         display: none;
     }
+
     .info-container .mob {
         display: block;
         grid-column: span 5;
