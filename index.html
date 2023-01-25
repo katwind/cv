@@ -5,12 +5,34 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>CV</title>
+    <link rel="stylesheet" href="style.css" id="theme-link">
+    <link rel="shortcut icon" href="./images/face.ico" type="image/x-icon">
+    <title>CV Katerina Korobova</title>
 </head>
 <body>
 <header class="header">
     <div class="header-container">
+        <div class="navbar-burger">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+            </label>
+            <ul class="nav-burger-box">
+                <li><a href="#contacts" class="burger-item">Contacts</a></li>
+                <li><a href="#about" class="burger-item">About</a></li>
+                <li><a href="#education" class="burger-item">Education</a></li>
+                <li><a href="#experience" class="burger-item">Experience</a></li>
+                <li><a href="#gallery-id" class="burger-item">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="switch-theme">
+            <button class="btn-toggle">
+                <svg width="34px" height="34px">
+                    <use xlink:href="./images/icons.svg#color-theme"></use>
+                </svg>
+            </button>
+        </div>
+
         <nav class="navigation-panel">
             <ul class="nav-list">
                 <li class="nav-item">
@@ -34,75 +56,153 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#additional" class="nav-link">
-                        Additional
+                    <a href="#gallery-id" class="nav-link">
+                        Gallery
                     </a>
                 </li>
 
             </ul>
         </nav>
+
+        <div class="header-name">
+            <h4 class="h-name">Katerina Korobova</h4>
+            <a href="tel:+375291066492" class="h-tel">+375-29-106-64-92</a>
+        </div>
     </div>
 </header>
 <main class="main">
-    <section class="info">
+    <section class="info" id="contacts">
         <div class="info-container">
             <div class="photo-container">
                 <img src="./images/me.jpg" alt="Profile photo" class="profile-photo">
             </div>
             <div class="information">
-                <h1 class="name">Katerina Korobova</h1>
-                <p class="job">Junior front-end developer</p>
+                <div class="main-info">
+                    <h1 class="name">Katerina <br class="name-break">Korobova</h1>
+                    <p class="job">Junior front-end developer</p>
+                </div>
                 <div class="line"></div>
+                <div class="other-info">
+                    <p class="info-text"><span>Age: </span> 30</p>
+                    <p class="info-text"><span>Address: </span>Minsk district, Alekseevka v., Vinogradnaya str. 6</p>
+                    <p class="info-text"><span>Email: </span> <a class="info-link" href="mailto:katherinne@list.ru">katherinne@list.ru</a>
+                    </p>
+                    <p class="info-text"><span>Phone: </span> <a class="info-link" href="tel:+375291066492">+375 (29)
+                        106-64-92</a></p>
+                </div>
+            </div>
+            <div class="other-info mob">
                 <p class="info-text"><span>Age: </span> 30</p>
                 <p class="info-text"><span>Address: </span>Minsk district, Alekseevka v., Vinogradnaya str. 6</p>
                 <p class="info-text"><span>Email: </span> <a class="info-link" href="mailto:katherinne@list.ru">katherinne@list.ru</a>
                 </p>
                 <p class="info-text"><span>Phone: </span> <a class="info-link" href="tel:+375291066492">+375 (29)
                     106-64-92</a></p>
-                <div class="social-links">
-                    <ul class="social-list">
-                        <li class="social-item">
-                            <a href="https://github.com/katwind" class="social-link">
-                                <svg width="26px" height="26px">
-                                    <use xlink:href="./images/icons.svg#github"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-item">
-                            <a href="https://www.linkedin.com/in/katerina-korobova/" class="social-link">
-                                <svg width="26px" height="26px">
-                                    <use xlink:href="./images/icons.svg#linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-item">
-                            <a href="https://t.me/CatherineWind" class="social-link">
-                                <svg width="26px" height="26px">
-                                    <use xlink:href="./images/icons.svg#telegram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="social-item">
-                            <a href="viber://chat?number=+375291066492" class="social-link">
-                                <svg width="26px" height="26px">
-                                    <use xlink:href="./images/icons.svg#viber"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <div class="social-links">
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="https://github.com/katwind" class="social-link" target="_blank">
+                            <svg width="26px" height="26px">
+                                <use xlink:href="./images/icons.svg#github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/katerina-korobova/" class="social-link"
+                           target="_blank">
+                            <svg width="26px" height="26px">
+                                <use xlink:href="./images/icons.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="https://t.me/CatherineWind" class="social-link" target="_blank">
+                            <svg width="26px" height="26px">
+                                <use xlink:href="./images/icons.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="viber://chat?number=+375291066492" class="social-link desk" target="_blank">
+                            <svg width="26px" height="26px">
+                                <use xlink:href="./images/icons.svg#viber"></use>
+                            </svg>
+                        </a>
+                        <a href="viber://add?number=375291066492" class="social-link mob" target="_blank">
+                            <svg width="26px" height="26px">
+                                <use xlink:href="./images/icons.svg#viber"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
     <section class="about-section" id="about">
+        <button id="btn-up" class="up-button" title="To the top">&#10094;</button>
         <h2 class="about-heading">About</h2>
         <div class="about-container">
             <div class="about-info">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus lectus, ultricies gravida neque
-                    nec, dictum congue nibh. Proin interdum feugiat vulputate. Aliquam eu tempus leo. Quisque eros nunc,
-                    laoreet nec fringilla ut, molestie eu turpis. Duis laoreet augue lacus, eu faucibus nisl luctus ac.
-                    Pellentesque ultricies eu mauris in luctus. Mauris gravida vel ipsum eu gravida. Integer ac congue
-                    lacus. Nunc vestibulum orci magna. Pellentesque lacinia velit eget sapien feugiat scelerisque.</p>
+                <div class="personal-info">
+                    <p>
+                    Hello everyone. I'm on the way of learning front-end and I love it! I enjoy learning and improving
+                    both my hard and soft skills. After school I didn't realize what exactly I'm going to be, so my
+                    parents decided language studies is the best variant. So I came to MSLU and then spent 2 years of
+                    compulsory work at school. That time I've started to learn web-development, but I had to put aside
+                    my studies and spend some years on maternity leave. And now I know what I want and do my best to
+                    reach my life goals.</p>
+
+                    <ul class="about-facts"><b>Some facts about me:</b>
+                    <li>I was born and grew up in Minsk, but after kids' birth moved to the countryside.
+                        But still I come to Minsk every day for working etc.
+                    </li>
+                    <li>I like to learn something new all the time, and I really enjoy creating things by myself, like
+                        home decor or clothes.
+                    </li>
+                    <li>I put some cat's photos into gallery, because everyone love cats ^.^</li>
+                </ul>
+                </div>
+                <div class="skills">
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <p>HTML</p>
+                            <div class="skill-progress">
+                                <div class="html"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <p>CSS</p>
+                            <div class="skill-progress">
+                                <div class="css"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <p>SASS/SCSS</p>
+                            <div class="skill-progress">
+                                <div class="sass"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <p>JavaScript</p>
+                            <div class="skill-progress">
+                                <div class="js"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <p>React</p>
+                            <div class="skill-progress">
+                                <div class="react"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <p>English</p>
+                            <div class="skill-progress">
+                                <div class="english"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="about-lang">
                 <h3>Languages:</h3>
@@ -122,6 +222,7 @@
                 <p><span>Faculty: </span>English language</p>
                 <p><span>Speciality: </span>Modern foreign languages (teaching)</p>
             </div>
+            <div class="line"></div>
             <div class="educational-item">
                 <h4>Institute of IT and Business Administration</h4>
                 <p>2016-2018</p>
@@ -135,7 +236,116 @@
             </div>
         </div>
     </section>
+    <section class="experience-section" id="experience">
+        <h2 class="experience-heading">Working Experience</h2>
+        <div class="experience-container">
+            <div class="exp-item">
+                <h4>State School №51</h4>
+                <p>Dec.2015 - Aug.2022</p>
+                <p><span>Position: </span>English teacher</p>
+            </div>
+            <div class="exp-item">
+                <h4>English tutor</h4>
+                <p>2014 - 2017</p>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-section" id="gallery-id">
+        <div class="gallery">
+            <h2 class="gallery-heading">Gallery</h2>
+            <div class="gallery-container">
+                <div class="slide-wrapper slide">
+                    <div class="slide-count">1 / 5</div>
+                    <img src="./images/photo_1.jpg" alt="Cat with grass" class="gallery-image">
+                </div>
+                <div class="slide-wrapper slide">
+                    <div class="slide-count">2 / 5</div>
+                    <img src="./images/photo2.jpg" alt="Cat on the box" class="gallery-image">
+                </div>
+                <div class="slide-wrapper slide">
+                    <div class="slide-count">3 / 5</div>
+                    <img src="./images/photo3.jpg" alt="Cat chilling after hard work" class="gallery-image">
+
+                </div>
+                <div class="slide-wrapper slide">
+                    <div class="slide-count">4 / 5</div>
+                    <img src="./images/photo4.jpg" alt="Cat wonders who is there" class="gallery-image">
+
+                </div>
+                <div class="slide-wrapper slide">
+                    <div class="slide-count">5 / 5</div>
+                    <img src="./images/photo5.jpg" alt="Cat's second month" class="gallery-image">
+                </div>
+
+                <a onclick="moveSlides(-1)" class="prev-button" title="Previous slide">
+                    &#10094;
+                </a>
+                <a onclick="moveSlides(1)" class="next-button" title="Next slide">
+                    &#10095;
+                </a>
+            </div>
+            <div class="gallery-bar">
+                <a onclick="moveSlides(-1)" class="prev-button mob" title="Previous slide">
+                    &#10094;
+                </a>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+                <a onclick="moveSlides(1)" class="next-button mob" title="Next slide">
+                    &#10095;
+                </a>
+            </div>
+        </div>
+    </section>
+
 </main>
-<footer class="footer"></footer>
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="course-title">
+            for Datamola course <br>
+            <b>Js From Zero to Hero</b>
+        </div>
+        <p class="date">Jan-2023</p>
+        <div class="social-links">
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="https://github.com/katwind" class="social-link" target="_blank">
+                        <svg width="26px" height="26px">
+                            <use xlink:href="./images/icons.svg#github"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://www.linkedin.com/in/katerina-korobova/" class="social-link"
+                       target="_blank">
+                        <svg width="26px" height="26px">
+                            <use xlink:href="./images/icons.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://t.me/CatherineWind" class="social-link" target="_blank">
+                        <svg width="26px" height="26px">
+                            <use xlink:href="./images/icons.svg#telegram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="viber://chat?number=+375291066492" class="social-link" target="_blank">
+                        <svg width="26px" height="26px">
+                            <use xlink:href="./images/icons.svg#viber"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
