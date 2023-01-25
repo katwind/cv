@@ -598,9 +598,20 @@ body {
 
     .gallery-container {
         max-width: 600px;
-        height: 450px;
+        max-height: 500px;
     }
 
+    .slide-wrapper {
+        height: 450px;
+        margin-bottom: 0;
+    }
+
+    .gallery-image {
+        height: 100%;
+    }
+.slide-count {
+    left: 12%;
+}
     .up-button {
         right: 2.5%;
     }
@@ -812,6 +823,7 @@ body {
         padding: 0;
         border: none;
     }
+
     .desk {
         display: none;
     }
