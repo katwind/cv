@@ -207,6 +207,9 @@ body {
     gap: 7%;
 }
 
+.about-facts {
+    list-style: square;
+}
 .personal-info {
     flex-basis: 73%;
     padding: 5% 0 5%;
@@ -605,10 +608,6 @@ body {
         height: 450px;
         margin-bottom: 0;
     }
-
-    /*.gallery-image {*/
-    /*    height: 100%;*/
-    /*}*/
 
     .slide-count {
         left: 12%;
